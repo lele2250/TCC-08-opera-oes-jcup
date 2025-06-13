@@ -15,6 +15,10 @@ inteiro = {digito}+
           }
 "+"       { return new Symbol(sym.MAIS); }
 "-"       { return new Symbol(sym.MENOS); }
+"*"       { return new Symbol(sym.MULT); }
+"/"       { return new Symbol(sym.DIV); }
+"%"       { return new Symbol(sym.RESTO); }
+"^"       { return new Symbol(sym.POT); }
 ";"       { return new Symbol(sym.PTVIRG); }
 \n        { /* Ignora nova linha. */ }
 [ \t\r]+  { /* Ignora espaços. */ }
